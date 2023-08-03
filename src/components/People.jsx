@@ -12,7 +12,7 @@ const People = () => {
             <img className='w-full h-full' src={ Avather } alt='Founder' />
           </div>
           <div className='grid justify-center items-center'>
-            <p className='font font-medium text-lg'>Naveen Alla</p>
+            <p className='font font-medium text-lg'>Ram Prasad Dhramapuri</p>
             <p>Chief Technology Officer (CTO)</p>
           </div>
         </div>
@@ -21,7 +21,7 @@ const People = () => {
             <img className='w-full h-full' src={ Avather } alt='Founder' />
           </div>
           <div className='grid justify-center items-center mt-3'>
-            <p className='font font-medium text-lg'>Naveen Alla</p>
+            <p className='font font-medium text-lg'>Katta Srikanth</p>
             <p>Chief Executive Officer (CEO)</p>
           </div>
         </div>
@@ -39,7 +39,7 @@ const People = () => {
             <img className='w-full h-full' src={ Avather } alt='Founder' />
           </div>
           <div className='grid justify-center items-center mt-3'>
-            <p className='font font-medium text-lg'>Naveen Alla</p>
+            <p className='font font-medium text-lg'>Salauddin Mohammad </p>
             <p>Chief Human Resources Officer (CHRO)</p>
           </div>
         </div>
