@@ -21,7 +21,6 @@ const NavBar = () => {
                 setNavPos( '' );
             }
             setScrollY( currentScrollY );
-            console.log( currentScrollY )
         };
 
         window.addEventListener( 'scroll', handleScroll );
