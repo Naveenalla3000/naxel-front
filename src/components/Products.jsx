@@ -12,7 +12,7 @@ const Products = () => {
     const fetchProducts = async () => {
       try {
         const token = localStorage.getItem( 'token' ).slice( 1, -1 )
-        const res = await axios.get( 'http://localhost:4000/api/products', {
+        const res = await axios.get( 'https://naxel-back.onrender.com/api/products', {
           headers: {
             authorization: `Bearer ${ token }`
           }

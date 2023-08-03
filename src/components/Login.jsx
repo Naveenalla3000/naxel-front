@@ -24,7 +24,7 @@ const Login = () => {
     if ( !userPassword ) alert( "Password shoild Be filled" )
     e.preventDefault();
     try {
-      const res = await axios.post( 'http://localhost:4000/api/users/login', { userEmail, userPassword } );
+      const res = await axios.post( 'https://naxel-back.onrender.com/api/users/login', { userEmail, userPassword } );
       if ( res.status === 200 ) {
         console.log( res.data );
         const token = await res.data?.token;

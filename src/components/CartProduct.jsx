@@ -32,7 +32,7 @@ const CartProduct = ( { product } ) => {
         try {
             const userId = localStorage.getItem( 'userId' ).slice( 1, -1 );
             const token = localStorage.getItem( 'token' ).slice( 1, -1 )
-            const res = await axios.delete( `http://localhost:4000/api/fav/${ userId }/${ product._id }`,
+            const res = await axios.delete( `https://naxel-back.onrender.com/api/fav/${ userId }/${ product._id }`,
                 {
                     headers: {
                         authorization: `Bearer ${ token }`

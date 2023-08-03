@@ -41,7 +41,7 @@ const Register = () => {
   const handleRegister = async ( e ) => {
     e.preventDefault()
     try {
-      const res = await axios.post( 'http://localhost:4000/api/users/register',
+      const res = await axios.post( 'https://naxel-back.onrender.com/api/users/register',
         { userFirstName, userLastName, userPassword, userConfirmPassword, userPhoneNumber, userEmail, userGender, } )
       if ( res.status === 200 ) {
         console.log( res.data );

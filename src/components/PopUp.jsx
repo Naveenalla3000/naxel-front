@@ -10,7 +10,7 @@ const Popup = ( { isOpen, onClose, productId, productName, children, } ) => {
         try {
             const userId = localStorage.getItem( 'userId' ).slice( 1, -1 )
             const token = localStorage.getItem( 'token' ).slice( 1, -1 )
-            const res = await axios.post( `http://localhost:4000/api/orders/${ userId }/${ productId }`, { userId, productId }, {
+            const res = await axios.post( `https://naxel-back.onrender.com/api/orders/${ userId }/${ productId }`, { userId, productId }, {
                 headers: {
                     authorization: `Bearer ${ token }`
                 }

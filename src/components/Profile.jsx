@@ -17,7 +17,7 @@ const Profile = () => {
     try {
       const userId = localStorage.getItem( 'userId' ).slice( 1, -1 );
       const token = localStorage.getItem( 'token' ).slice( 1, -1 )
-      const res = await axios.get( `http://localhost:4000/api/users/${ userId }`, {
+      const res = await axios.get( `https://naxel-back.onrender.com/api/users/${ userId }`, {
         headers: {
           authorization: `Bearer ${ token }`
         }
@@ -39,7 +39,7 @@ const Profile = () => {
       try {
         const userId = localStorage.getItem( 'userId' ).slice( 1, -1 );
         const token = localStorage.getItem( 'token' ).slice( 1, -1 )
-        const res = await axios.patch( `http://localhost:4000/api/users/${ userId }`,
+        const res = await axios.patch( `https://naxel-back.onrender.com/api/users/${ userId }`,
           { userFirstName, userLastName, userEmail, userPhoneNumber, userGender }, {
           headers: {
             authorization: `Bearer ${ token }`

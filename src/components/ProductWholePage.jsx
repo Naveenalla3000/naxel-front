@@ -21,7 +21,7 @@ const ProductWholePage = () => {
         try {
             const userId = localStorage.getItem( 'userId' ).slice( 1, -1 );
             const token = localStorage.getItem( 'token' ).slice( 1, -1 )
-            const res = await axios.post( `http://localhost:4000/api/fav/${ userId }/${ product._id }`, {}, {
+            const res = await axios.post( `https://naxel-back.onrender.com/api/fav/${ userId }/${ product._id }`, {}, {
                 headers: {
                     authorization: `Bearer ${ token }`
                 }
@@ -40,7 +40,7 @@ const ProductWholePage = () => {
         const fetchProducts = async () => {
             try {
                 const token = localStorage.getItem( 'token' ).slice( 1, -1 );
-                const res = await axios.get( `http://localhost:4000/api/products/${ _id }`, {
+                const res = await axios.get( `https://naxel-back.onrender.com/api/products/${ _id }`, {
                     headers: {
                         authorization: `Bearer ${ token }`,
                     },
