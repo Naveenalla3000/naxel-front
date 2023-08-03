@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    scroll-behavior: smooth;
+}
+@layer utilities {
+  .strikethrough {
+    text-decoration: line-through;
+  }
+}
+
+
+/* Remove @tailwind directives as they are not needed in CSS file */
