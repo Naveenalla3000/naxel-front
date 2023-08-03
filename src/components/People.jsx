@@ -31,7 +31,7 @@ const People = () => {
           </div>
           <div className='grid justify-center items-center mt-3'>
             <p className='font font-medium text-lg'>Naveen Alla</p>
-            <p>Founder of Naxel</p>
+            <p>Founder of Nexel</p>
           </div>
         </div>
         <div className='grid items-center justify-center p-3 text-center'>
