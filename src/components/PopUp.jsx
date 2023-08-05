@@ -41,7 +41,7 @@ const Popup = ( { isOpen, onClose, productId, productName, children, } ) => {
                     <div>
                         <button className='border-2 py-2 px-2 bg-white rounded-md text-black outline outline-offset-0'
                             onClick={ () => handleCloseClick() }
-                        >cancle</button>
+                        >cancel</button>
                     </div>
                     <div>
                         <button className='border-double py-2 px-2 bg-green-600 rounded-md text-white font-bold hover:bg-green-500 hover:text-green-100 outline outline-offset-0' onClick={ handleOrder }>Place order</button>
